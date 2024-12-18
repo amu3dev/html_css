@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position_ex3</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      .content {
+        flex: 1;
+      }
+      .sticky-container {
+        position: relative;
+        width: 25%;
+      }
+      .sticky-header {
+        position: -webkit-sticky; /* For Safari */
+        position: sticky;
+        top: 10px;
+        background: #4caf50;
+        padding: 10px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1>Sticky Header with Scrolling Content</h1>
+        <p>
+          Sticky headers are used to keep navigation or important info at the
+          top until scrolled past a certain point.
+        </p>
+        <h2>Explanation</h2>
+        <p>
+          As you scroll, the header stays at the top until you reach the top: 0
+          position. Once scrolled beyond that point, it stays visible at the top
+          of the viewport.
+        </p>
+      </div>
+      <div class="sticky-container">
+        <div class="sticky-header">
+          Sticky Header
+          <img src="./images/1.png" alt="web dev" style="width: 100%" />
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 200vh; padding: 20px">
+      <p>Scroll down to see the sticky header in action...</p>
+    </div>
+  </body>
+</html>

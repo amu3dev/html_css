@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position_ex1</title>
+  </head>
+  <body>
+    <h1>Relative and Absolute for Card Layouts</h1>
+    <p>
+      Imagine you want to create a profile card with a photo in the top-right
+      corner of the card. Here’s how you’d do it:
+    </p>
+
+    <div
+      style="
+        position: relative;
+        width: 250px;
+        padding: 20px;
+        background: hsl(64, 36%, 84%);
+        border-radius: 8px;
+      ">
+      <div style="position: absolute; top: 10px; right: 10px">
+        <img
+          src="images/1.png"
+          alt="Profile Picture"
+          style="width: 50px; height: 50px; border-radius: 50%" />
+      </div>
+      <h3>John Doe</h3>
+      <p>Web Developer</p>
+    </div>
+    <h2>Explnation</h2>
+    <p>
+      The outer div has a relative position, which means that the inner div with
+      the profile picture will be positioned relative to the outer div. The
+      inner div has an absolute position, which means that it will be positioned
+      relative to the outer div. The top and right properties are used to
+      position the profile picture in the top-right corner of the card.
+    </p>
+    <p>
+      The outer div (the card) is positioned relative, so the inner div with the
+      profile picture (positioned absolute) will be 10px from the top-right
+      corner of this card, not the whole page.
+    </p>
+  </body>
+</html>

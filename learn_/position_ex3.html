@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position_ex3</title>
+  </head>
+  <body>
+    <div>
+      <h1>Sticky Header with Scrolling Content</h1>
+      <p>
+        Sticky headers are used to keep navigation or important info at the top
+        until scrolled past a certain point.
+      </p>
+      <h2>Explnation</h2>
+      <p>
+        As you scroll, the header stays at the top until you reach the top: 0
+        position. Once scrolled beyond that point, it stays visible at the top
+        of the viewport.
+      </p>
+    </div>
+    <div style="position: absolute">
+      <div
+        style="
+          position: fixed;
+          top: 10px;
+          right: 15px;
+          background: #4caf50;
+          padding: 10px;
+          color: white;
+          width: 25%;
+        ">
+        <img
+          src="./images/1.png"
+          alt="web dev"
+          width="70%" />
+      </div>
+    </div>
+
+    <div style="height: 200vh; padding: 20px">
+      <p>Scroll down to see the sticky header in action...</p>
+    </div>
+  </body>
+</html>

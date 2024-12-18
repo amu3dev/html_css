@@ -1,0 +1,12 @@
+body{
+    background-color: red;
+    color: white;
+}
+h1{
+    color: burlywood;
+    border: 2px solid white;
+}
+h3{
+    color: yellow;
+    border: 1px solid white;
+}

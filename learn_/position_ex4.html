@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position_ex4</title>
+  </head>
+  <body>
+    <div>
+      <h1>Example 4: Overlay with Relative and Absolute Positioning</h1>
+      <p>
+        This is useful for creating pop-up overlays on top of content, such as a
+        modal or message box. html Copy code
+      </p>
+      <h2>Explnation</h2>
+      <p>
+        The overlay div covers the entire relative parent div because it has
+        width: 100% and height: 100%. The display: flex; justify-content:
+        center; align-items: center; centers the overlay text.
+      </p>
+    </div>
+    <div
+      style="
+        position: relative;
+        width: 300px;
+        height: 200px;
+        background: lightblue;
+      ">
+      <p>This is the main content.</p>
+
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        ">
+        Overlay Text
+      </div>
+    </div>
+
+    <div style="height: 200vh; padding: 20px">
+      <p>Scroll down to see the sticky header in action...</p>
+    </div>
+  </body>
+</html>
